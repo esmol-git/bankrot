@@ -1,38 +1,54 @@
 .btn {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 3px 40px;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    min-height: 40px;
-    width: 200px;
-    font-weight: 500;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px 40px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  min-height: 40px;
+  width: 200px;
+  font-weight: 500;
+  transition: .3s linear;
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #fff;
+    width: 32px;
+    height: 32px;
+    margin-right: 0.25rem;
+    transition: .3s linear;
+  }
+
+  &--red {
+    color: #FF4242;
+    border: 1px solid #FF4242;
 
     svg {
-        display: inline-block;
-        vertical-align: middle;
+      fill: #FF4242;
+    }
+
+    &:hover {
+      background: #FF4242;
+      border: 1px solid #FF4242;
+      color: #fff;
+
+      svg {
         fill: #fff;
-        width: 32px;
-        height: 32px;
-        margin-right: 0.25rem;
+      }
     }
+  }
 
-    &--red {
-        color: #FF4242;
-        border: 1px solid #FF4242;
-    }
-
-    &--gray {
-        color: #0B1F35;
-        border: 1px solid #0B1F35;
-    }
+  &--gray {
+    color: #0B1F35;
+    border: 1px solid #0B1F35;
+  }
 }

@@ -14,27 +14,82 @@
         ul.card__footer-list
             li.card__footer-item
                 a.card__footer-link(href="#")
-                    svg(width='32', height='32', viewBox='0 0 32 32', fill='none', xmlns='http://www.w3.org/2000/svg')
-                        path(d='M16 7.96286L18.5078 12.1985C18.7888 12.6732 19.2533 13.0107 19.7915 13.1312L24.5948 14.2074L21.3414 17.9013C20.9768 18.3152 20.7994 18.8613 20.8511 19.4104L21.3119 24.3112L16.7934 22.3585C16.2871 22.1397 15.7129 22.1397 15.2066 22.3585L10.6881 24.3112L11.1489 19.4104C11.2006 18.8613 11.0232 18.3152 10.6586 17.9013L7.40517 14.2074L12.2085 13.1312C12.7467 13.0107 13.2112 12.6732 13.4922 12.1985L16 7.96286Z')
-
+                    +icon('star')
             li.card__footer-item
                 a.card__footer-link(href="#")
-                    svg( viewBox='0 0 32 32', fill='none', xmlns='http://www.w3.org/2000/svg')
-                        path(d='M10.2436 4.81802L11.2258 4.80056V3.81818V1.20259L18.531 7.58944L11.2258 14.7916V12.3636V11.3532L10.2154 11.3637L9.18227 11.3745C5.88869 11.4088 2.91074 12.9742 1 15.4474V14.2274C1 9.09515 5.11213 4.90926 10.2436 4.81802Z')
-
+                    +icon('arrow')
             li.card__footer-item
                 a.card__footer-link(href="#")
-                    img(src="../static/images/general/mail.svg", alt="")
-
+                    +icon('mail')
             li.card__footer-item
                 a.card__footer-link(href="#")
-                    img(src="../static/images/general/bell.svg", alt="")
-
+                    +icon('bell')
         .card__footer-button
             button.btn.btn--red.card__btn
-                svg(width='33', height='32', fill='none', xmlns='http://www.w3.org/2000/svg')
-                    path(d='M25.7043 12.6831L26.6601 12.977V12.977L25.7043 12.6831ZM24.4132 16.8817L23.4574 16.5878L23.4574 16.5878L24.4132 16.8817ZM7.14286 19L6.15381 18.8523L6.15291 18.8586L7.14286 19ZM8.44289 10.2954L7.45386 10.1477V10.1477L8.44289 10.2954ZM5.5 7C4.94772 7 4.5 7.44772 4.5 8C4.5 8.55228 4.94772 9 5.5 9V7ZM6.82612 21.2172L5.83617 21.0757L6.82612 21.2172ZM11.5 9.09524C10.9477 9.09524 10.5 9.54295 10.5 10.0952C10.5 10.6475 10.9477 11.0952 11.5 11.0952V9.09524ZM24.7484 12.3891L23.4574 16.5878L25.3691 17.1756L26.6601 12.977L24.7484 12.3891ZM21.5457 18H7.14286V20H21.5457V18ZM8.13189 19.1477L9.43192 10.4431L7.45386 10.1477L6.15383 18.8523L8.13189 19.1477ZM6.46483 7H5.5V9H6.46483V7ZM6.15291 18.8586L5.83617 21.0757L7.81607 21.3586L8.13281 19.1414L6.15291 18.8586ZM8.80602 24.5H22.5V22.5H8.80602V24.5ZM23.7926 9.09524H11.5V11.0952H23.7926V9.09524ZM23.4574 16.5878C23.1993 17.4272 22.4239 18 21.5457 18V20C23.302 20 24.8529 18.8544 25.3691 17.1756L23.4574 16.5878ZM26.6601 12.977C27.2533 11.0479 25.8108 9.09524 23.7926 9.09524V11.0952C24.4653 11.0952 24.9462 11.7461 24.7484 12.3891L26.6601 12.977ZM5.83617 21.0757C5.57799 22.883 6.98037 24.5 8.80602 24.5V22.5C8.19747 22.5 7.73001 21.961 7.81607 21.3586L5.83617 21.0757ZM9.43192 10.4431C9.70273 8.62991 8.29816 7 6.46483 7V9C7.07594 9 7.54413 9.5433 7.45386 10.1477L9.43192 10.4431Z', fill='#FF4242')
-                    circle(cx='11.5', cy='24', r='2', fill='white', stroke='#FF4242', stroke-width='2')
-                    circle(cx='21.5', cy='24', r='2', fill='white', stroke='#FF4242', stroke-width='2')
+                +icon('basket')
+                span Купить лот
+            button.btn.btn--gray.card__btn Отчет эксперта
+
+.card
+    .card__main
+        .card__img
+            img(src="../static/images/content/card-img_2.jpg", alt="card")
+        .card__content
+            .card__header
+                span.card__header-arrow
+                    img(src="../static/images/general/arrow-down.svg", alt="up")
+                .card__header-price 5 582 000 ₽
+            .card__suptitle Костромская обл., Кострома
+            .card__title Mercedes-Benz E-Класс AMG V (W213) 63 AMG S
+            .card__text Экскаватор HYUNDAI R450LC-7 зав.№ NB0110574, гос.№ 95-79 ТА 71, 2006 г.в. Ознакомиться с характеристиками предмета торгов и иными сведениями можно после подачи заявки на ознакомление с предметом торгов, согласовав дату ознакомления по тел. 89281875864 или e-mail:partnertorgrnd@yandex.ruЭкскаватор HYUNDAI R450LC-7 зав.№ NB0110574, гос.№ 95-79 ТА 71, 2006 г.в. Ознакомиться с характеристиками предмета торгов и иными сведениями можно
+    .card__footer
+        ul.card__footer-list
+            li.card__footer-item
+                a.card__footer-link(href="#")
+                    +icon('star')
+            li.card__footer-item
+                a.card__footer-link(href="#")
+                    +icon('arrow')
+            li.card__footer-item
+                a.card__footer-link(href="#")
+                    +icon('mail')
+            li.card__footer-item
+                a.card__footer-link(href="#")
+                    +icon('bell')
+        .card__footer-button
+            button.btn.btn--red.card__btn
+                +icon('basket')
+                span Купить лот
+            button.btn.btn--gray.card__btn Отчет эксперта
+.card
+    .card__main
+        .card__img
+            img(src="../static/images/content/card-img_3.jpg", alt="card")
+        .card__content
+            .card__header
+                span.card__header-arrow
+                    img(src="../static/images/general/arrow-down.svg", alt="up")
+                .card__header-price 5 582 000 ₽
+                span.card__header-agrement Прямой договор
+            .card__suptitle Костромская обл., Кострома
+            .card__title PORSCHE 911 SPEEDSTER
+            .card__text Экскаватор HYUNDAI R450LC-7 зав.№ NB0110574, гос.№ 95-79 ТА 71, 2006 г.в. Ознакомиться с характеристиками предмета торгов и иными сведениями можно после подачи заявки на ознакомление с предметом торгов, согласовав дату ознакомления по тел. 89281875864 или e-mail:partnertorgrnd@yandex.ruЭкскаватор HYUNDAI R450LC-7 зав.№ NB0110574, гос.№ 95-79 ТА 71, 2006 г.в. Ознакомиться с характеристиками предмета торгов и иными сведениями можно
+    .card__footer
+        ul.card__footer-list
+            li.card__footer-item
+                a.card__footer-link(href="#")
+                    +icon('star')
+            li.card__footer-item
+                a.card__footer-link(href="#")
+                    +icon('arrow')
+            li.card__footer-item
+                a.card__footer-link(href="#")
+                    +icon('mail')
+            li.card__footer-item
+                a.card__footer-link(href="#")
+                    +icon('bell')
+        .card__footer-button
+            button.btn.btn--red.card__btn
+                +icon('basket')
                 span Купить лот
             button.btn.btn--gray.card__btn Отчет эксперта

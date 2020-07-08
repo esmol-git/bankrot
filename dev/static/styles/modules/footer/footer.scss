@@ -1,1 +1,120 @@
-footer { flex: 0 0 auto; }
+footer {
+  flex: 0 0 auto;
+}
+
+.footer {
+  background: #FAFAFC;
+  padding: 52px 0 120px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    margin-left: 70px;
+
+    &-link {
+      font-size: 15px;
+      line-height: 17px;
+      letter-spacing: 0.0125em;
+      color: #0B1F35;
+      padding-right: 30px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 60px;
+
+    &-block {
+      text-align-last: left;
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 17px;
+      text-align: center;
+      color: #000000;
+      padding-bottom: 10px;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+
+    &-link {
+      font-size: 15px;
+      line-height: 17px;
+      letter-spacing: 0.0125em;
+      color: #FF4242;
+      padding: 10px 0;
+      margin-right: 10px;
+    }
+
+    &-number {
+      font-size: 15px;
+      line-height: 17px;
+      letter-spacing: 0.0125em;
+      color: #8D91A0;
+    }
+  }
+
+  &__bottom {
+    background: #0B1F35;
+    position: relative;
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      padding: 23px 0;
+    }
+
+    &-copyright {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.015em;
+    }
+
+    &-contacts {
+      position: absolute;
+      right: 55px;
+
+    }
+
+    &-link {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 17px;
+      color: #FFFFFF;
+      padding-left: 35px;
+
+      .icon-phone,
+      .icon-mail {
+        width: 20px;
+        height: 20px;
+        fill: #0B1F35;
+        stroke: #fff;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.main {
+  position: relative;
+}
+
+.sidebar {
+  position: relative;
+}
+
+.sidebar.fixed {
+  position: fixed;
+}
