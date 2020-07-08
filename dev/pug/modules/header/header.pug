@@ -1,1 +1,57 @@
 header.header
+    .header__top
+        .container
+            .header__inner
+                .header__info
+                    a(href="#").header__info-link О проекте
+                    a(href="#").header__info-link Как заказать лот?
+                    a(href="#").header__info-link Не нашли что искали?
+
+                .header__registration
+                    a(href="#").header__registration-link
+                        img(src="../static/images/general/star.svg", alt="")
+                    a(href="#").header__registration-link
+                        img(src="../static/images/general/bell.svg", alt="")
+                    a(href="#").header__registration-link
+                        img(src="../static/images/general/user.svg", alt="")
+                        | Вход и регистрация
+    .header__main
+        .container
+            .header__main-inner
+                a.logo(href="")
+                    img(src="../static/images/general/logo.png", alt="")
+                nav.menu
+                    ul.menu__list
+                        li.menu__list-item
+                            a.menu__list-link(href="#")  Транспорт
+                        li.menu__list-item
+                            a.menu__list-link(href="#") Недвижимость
+                        li.menu__list-item
+                            a.menu__list-link(href="#") Финансовые активы и интелктуал...
+                        li.menu__list-item
+                            a.menu__list-link(href="#") C.X. иммущество
+                        li.menu__list-item
+                            a.menu__list-link(href="#") Еще...
+    .header__search
+        .container
+            .search__inner
+                .search__item
+                    select.dropdown(placeholder='Категория')
+                        option List entry #1
+                        option List entry #2
+                        option List entry #3
+                        option List entry #4
+                .search__item
+                    input.input(type="text" placeholder='Поиск по номеру лота или ключевому слову')
+                .search__item
+                    select.dropdown(placeholder='Город')
+                        option List entry #1
+                        option List entry #2
+                        option List entry #3
+                        option List entry #4
+                .search__item
+                    select.dropdown.light(placeholder='Район')
+                        option List entry #1
+                        option List entry #2
+                        option List entry #3
+                        option List entry #4
