@@ -114,5 +114,21 @@ button {
   width: 100%;
 }
 
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.sidebar {
+  flex-basis: 20%;
+}
+
+.content {
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
 //Модули
 @import "modules/modules";

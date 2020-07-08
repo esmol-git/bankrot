@@ -57,11 +57,6 @@ $(document).on('click touch', function (e) {
   }
 });
 
-// light
-$('.switch input').on('change', function (e) {
-  $('.dropdown, body').toggleClass('light', $(this).is(':checked'));
-});
-
 // Полифилы
 
 // forEach IE 11
