@@ -32,7 +32,9 @@
     "imagemin-jpeg-recompress": "^6.0.0"
   },
   "dependencies": {
+    "@chenfengyuan/datepicker": "^1.0.9",
     "normalize.css": "^8.0.1",
+    "sticky-sidebar": "^3.3.1",
     "svg4everybody": "^2.1.9"
   },
   "browserslist": [

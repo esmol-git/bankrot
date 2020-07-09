@@ -98,6 +98,27 @@ button {
   outline: none;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -116,8 +137,8 @@ button {
 
 .main {
   display: flex;
-  justify-content: space-between;
   margin-top: 55px;
+  position: relative;
 }
 
 .sidebar {
@@ -128,12 +149,33 @@ button {
   flex-basis: 65%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
+
+.sidebar {
+  margin-right: 20px;
+
+}
+
+
 
 .link__svg {
   width: 150px;
 }
+
+.sidebar {
+  will-change: min-height;
+
+}
+
+.sidebar__inner {
+  transform: translate(0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: position, transform;
+}
+
+
+
 
 //Модули
 @import "modules/modules";

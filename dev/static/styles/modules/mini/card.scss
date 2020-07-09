@@ -1,127 +1,138 @@
 .card {
-  margin-bottom: 16px;
-
-  &__main {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__img {
-    min-width: 200px;
-    margin-right: 15px;
-    border-radius: 5px;
-    overflow: hidden;
-
-    img {
-      max-width: 100%;
-      width: 100%;
-    }
-  }
-
-  &__header {
-    display: flex;
-    align-items: center;
     margin-bottom: 16px;
 
-    &-price {
-      font-weight: bold;
-      margin-left: 15px;
-      font-size: 18px;
-      line-height: 21px;
-      color: #0B1F35;
+    &__main {
+        display: flex;
+        justify-content: space-between;
     }
 
-    &-agrement {
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.015em;
-      color: #FFFFFF;
-      background: #3EE262;
-      border-radius: 4px;
-      padding: 5px 15px;
-      margin-left: 15px;
-    }
-  }
+    &__img {
+        min-width: 200px;
+        margin-right: 15px;
+        border-radius: 5px;
+        overflow: hidden;
 
-  &__suptitle {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.015em;
-    color: #8D91A0;
-    margin-bottom: 15px;
-  }
-
-  &__title {
-    font-size: 15px;
-    line-height: 17px;
-    color: #0B1F35;
-    margin-bottom: 15px;
-  }
-
-  &__text {
-    font-size: 15px;
-    line-height: 17px;
-    letter-spacing: 0.0125em;
-    color: rgba(#0B1F35, .5)
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
-    border-bottom: 1px solid #F2F2F2;
-
-    &-list {
-      width: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 
-    &-item {
-      width: 48px;
-      height: 40px;
-      border-right: 1px solid #EFF0F4;
-      display: flex;
-      justify-content: center;
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
 
-      &:last-child {
-        border-right: none;
-      }
+        &-price {
+            font-weight: bold;
+            margin-left: 15px;
+            font-size: 18px;
+            line-height: 21px;
+            color: #0B1F35;
+        }
+
+        &-agrement {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.015em;
+            color: #FFFFFF;
+            background: #3EE262;
+            border-radius: 4px;
+            padding: 5px 15px;
+            margin-left: 15px;
+        }
     }
 
-    &-link {
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      transition: .3s linear;
+    &__suptitle {
+        display: flex;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.015em;
+        margin-bottom: 15px;
 
-      &:hover {
-        background: rgba(250, 72, 72, 0.12);
-      }
+        &-firm {
+            color: #FF4242;
+            padding-right: 10px;
+            border-right: 1px solid #F2F2F2;
+        }
 
-      &:hover svg {
-        stroke: #FF4242;
-      }
-
-      svg {
-        stroke: rgba(#0B1F35, .5);
-        stroke-width: 2;
-        fill: transparent;
-        display: block;
-      }
+        &-city {
+            color: #8D91A0;
+            padding-left: 10px;
+        }
     }
-  }
 
-  &__btn:first-child {
-    margin-right: 15px;
-  }
+    &__title {
+        font-size: 15px;
+        line-height: 17px;
+        color: #0B1F35;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.0125em;
+        color: rgba(#0B1F35, .5)
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #F2F2F2;
+
+        &-list {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-item {
+            width: 48px;
+            height: 40px;
+            border-right: 1px solid #EFF0F4;
+            display: flex;
+            justify-content: center;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+        &-link {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: .3s linear;
+
+            &:hover {
+                background: rgba(250, 72, 72, 0.12);
+            }
+
+            &:hover svg {
+                stroke: #FF4242;
+            }
+
+            svg {
+                stroke: rgba(#0B1F35, .5);
+                stroke-width: 2;
+                fill: transparent;
+                display: block;
+            }
+        }
+    }
+
+    &__btn:first-child {
+        margin-right: 15px;
+    }
 }
 
 .icon-arrow,
 .icon-mail {
-  width: 20px;
+    width: 20px;
 }

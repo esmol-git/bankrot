@@ -9,12 +9,12 @@ header.header
 
                 .header__registration
                     a(href="#").header__registration-link
+                        img(src="../static/images/general/basket.svg", alt="")
+                    a(href="#").header__registration-link
                         img(src="../static/images/general/star.svg", alt="")
                     a(href="#").header__registration-link
                         img(src="../static/images/general/bell.svg", alt="")
-                    a(href="#").header__registration-link
-                        img(src="../static/images/general/user.svg", alt="")
-                        | Вход и регистрация
+                    button(href="#").btn.btn--redBorder.header__registration-btn Вход и регистрация
     .header__main
         .container
             .header__main-inner
@@ -36,22 +36,28 @@ header.header
         .container
             .search__inner
                 .search__item
-                    select.dropdown(placeholder='Категория')
-                        option Категория
-                        option List entry #2
-                        option List entry #3
-                        option List entry #4
+                    .select-c
+                        input.select__input(type='hidden', name='')
+                        .select__head Категория
+                        ul.select__list(style='display: none;')
+                            li.select__item Тип1
+                            li.select__item Тип2
+                            li.select__item Тип3
                 .search__item
                     input.input(type="text" placeholder='Поиск по номеру лота или ключевому слову')
                 .search__item
-                    select.dropdown(placeholder='Город')
-                        option Город
-                        option List entry #2
-                        option List entry #3
-                        option List entry #4
+                    .select-c
+                        input.select__input(type='hidden', name='')
+                        .select__head Номер сообщения ЕФРСБ
+                        ul.select__list(style='display: none;')
+                            li.select__item Тип1
+                            li.select__item Тип2
+                            li.select__item Тип3
                 .search__item
-                    select.dropdown.light(placeholder='Район')
-                        option Район
-                        option List entry #2
-                        option List entry #3
-                        option List entry #4
+                    .select-c
+                        input.select__input(type='hidden', name='')
+                        .select__head Номер сообщения ЕФРСБ
+                        ul.select__list(style='display: none;')
+                            li.select__item Тип1
+                            li.select__item Тип2
+                            li.select__item Тип3

@@ -7,7 +7,7 @@
   background: transparent;
   cursor: pointer;
   border-radius: 5px;
-  padding: 3px 40px;
+  padding: 3px 30px;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
@@ -28,9 +28,18 @@
     transition: .3s linear;
   }
 
-  &--red {
+  &--redBackground {
+    background: #FF4242;
+    color: #fff;
+
+    &:hover {
+      background: #DD0404;
+    }
+  }
+
+  &--redBorder {
     color: #FF4242;
-    border: 1px solid #FF4242;
+    border: 2px solid #FF4242;
 
     svg {
       fill: #FF4242;
@@ -38,7 +47,7 @@
 
     &:hover {
       background: #FF4242;
-      border: 1px solid #FF4242;
+      border: 2px solid #FF4242;
       color: #fff;
 
       svg {
@@ -47,8 +56,8 @@
     }
   }
 
-  &--gray {
+  &--grayBorder {
     color: #0B1F35;
-    border: 1px solid #0B1F35;
+    border: 2px solid #0B1F35;
   }
 }

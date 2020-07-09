@@ -42,17 +42,18 @@ header {
     &-link img {
       width: 22px;
       height: 22px;
-      fill: #0B1F35;
+      stroke: #0B1F35;
       margin-right: 25px;
     }
 
-    &-link:last-child {
-      display: flex;
-      align-items: center;
-      font-size: 15px;
-      line-height: 17px;
-      letter-spacing: 0.0125em;
-      color: #0B1F35;
+    &-btn {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.015em;
+      text-transform: inherit;
+      padding: 9px 14px;
+      width: auto;
+      min-height: 32px;
     }
   }
 
