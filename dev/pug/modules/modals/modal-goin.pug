@@ -1,0 +1,18 @@
+#popup.popup
+  .popup__body
+    .popup__content
+        a.popup__close.close-popup(href='#header')
+            img(src="../static/images/general/close.svg", alt="")
+        .popup__title Вход
+        form.form(action="")
+            input.input.form__input(type="text" placeholder="E-mail или имя пользователя")
+            input.input.form__input(type="password" placeholder="Пароль")
+            .popup__save
+                .checkbox
+                    input#checkbox.custom-checkbox(type='checkbox', name='checkbox', value='Запомнить меня')
+                    label.label(for='checkbox') Запомнить меня
+                a.popup__password.popup-link(href="#password") Забыли пароль?
+            .input__btn
+                input.btn.btn--redBackground(type="submit" value="Войти")
+                a.btn.btn--redBorder.popup-link(href="#registration") Зарегистрироваться
+        .popup__confidentiality При входе вы подтверждаете согласие <span>с условиями использования</span> платформы и политикой <span> конфиденциальности</span>

@@ -1,0 +1,19 @@
+#registration.popup
+    .popup__body
+        .popup__content
+            a.popup__close.close-popup(href='#header')
+                img(src="../static/images/general/close.svg", alt="")
+            .popup__title Регистрация
+            form.form(action="")
+                input.input.form__input(type="text" placeholder="Имя пользователя")
+                input.input.form__input(type="text" placeholder="E-mail")
+                .select.form__select
+                    input.select__input(type='hidden', name='')
+                    .select__head.header__select-head Пол
+                    ul.select__list(style='display: none;')
+                        li.select__item Мужской
+                        li.select__item Женский
+                input.input.form__input(type="password" placeholder="Пароль")
+                input.input.form__input(type="password" placeholder="Повторите пароль")
+                input.btn.btn--redBackground.mb-30(type="submit" value="Зарегистрироваться")
+            .popup__confidentiality При входе вы подтверждаете согласие <span>с условиями использования</span> платформы и политикой <span> конфиденциальности</span>

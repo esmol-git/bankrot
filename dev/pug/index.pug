@@ -8,80 +8,8 @@ block content
 	.container
 		#main-content.main
 			#sidebar.sidebar
-				.tab
-					input#tab1.tab__input(type='checkbox', name='tab-group')
-					label.tab-title(for='tab1') Начало приема заявок
-					section.tab-content
-						input.sidebar__input(data-toggle='datepicker' placeholder='Период')
-				.tab
-					input#tab2.tab__input(type='checkbox', name='tab-group')
-					label.tab-title(for='tab2') Окончание приема заявок
-					section.tab-content
-						input.sidebar__input(data-toggle='datepicker' placeholder='Период')
-				.tab
-					input#tab3.tab__input(type='checkbox', name='tab-group')
-					label.tab-title(for='tab3') Стоимость
-					section.tab-content
-						input.sidebar__input(type="number" placeholder="От")
-						input.sidebar__input(type="number" placeholder="До")
-				.select
-					input.select__input(type='hidden', name='')
-					.select__head Тип торгов
-					ul.select__list(style='display: none;')
-						li.select__item Тип1
-						li.select__item Тип2
-						li.select__item Тип3
-				.select
-					input.select__input(type='hidden', name='')
-					.select__head Вид торгов
-					ul.select__list(style='display: none;')
-						li.select__item Тип1
-						li.select__item Тип2
-						li.select__item Тип3
-				.select
-					input.select__input(type='hidden', name='')
-					.select__head Вид торгов
-					ul.select__list(style='display: none;')
-						li.select__item Тип1
-						li.select__item Тип2
-						li.select__item Тип3
-				.select
-					input.select__input(type='hidden', name='')
-					.select__head ЭТП
-					ul.select__list(style='display: none;')
-						li.select__item Тип1
-						li.select__item Тип2
-						li.select__item Тип3
-				.select
-					input.select__input(type='hidden', name='')
-					.select__head Должник
-					ul.select__list(style='display: none;')
-						li.select__item Тип1
-						li.select__item Тип2
-						li.select__item Тип3
-				.select
-					input.select__input(type='hidden', name='')
-					.select__head Арбитражный управляющий
-					ul.select__list(style='display: none;')
-						li.select__item Тип1
-						li.select__item Тип2
-						li.select__item Тип3
-				.select
-					input.select__input(type='hidden', name='')
-					.select__head Организатор торгов
-					ul.select__list(style='display: none;')
-						li.select__item Тип1
-						li.select__item Тип2
-						li.select__item Тип3
-				.select
-					input.select__input(type='hidden', name='')
-					.select__head Номер сообщения ЕФРСБ
-					ul.select__list(style='display: none;')
-						li.select__item Тип1
-						li.select__item Тип2
-						li.select__item Тип3
-				button.btn.btn--redBackground.sidebar__btn Найти
-				button.btn.btn--redBorder.sidebar__btn Сохранить поиск
+				include modules/sidebar/sidebar-transport
+				include modules/sidebar/sidebar-main
 			#content.content
 				.content
 					include modules/cards/card

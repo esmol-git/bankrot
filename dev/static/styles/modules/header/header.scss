@@ -37,13 +37,16 @@ header {
 
     &-link {
       display: block;
+      margin-right: 25px;
     }
 
-    &-link img {
-      width: 22px;
-      height: 22px;
+    &-link svg {
+      width: 32px;
+      height: 32px;
       stroke: #0B1F35;
-      margin-right: 25px;
+      stroke-width: 2;
+      fill: #fff;
+
     }
 
     &-btn {
@@ -51,7 +54,7 @@ header {
       line-height: 14px;
       letter-spacing: 0.015em;
       text-transform: inherit;
-      padding: 9px 14px;
+      padding: 9px 18px;
       width: auto;
       min-height: 32px;
     }
@@ -94,10 +97,10 @@ header {
   }
 
   &__item {
-    flex-basis: 20%;
+    flex-basis: 25%;
   }
 
   &__item:nth-child(2) {
-    flex-basis: 40%;
+    flex-basis: 50%;
   }
 }

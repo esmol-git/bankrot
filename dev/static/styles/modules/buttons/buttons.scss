@@ -17,6 +17,7 @@
   width: 200px;
   font-weight: 500;
   transition: .3s linear;
+  vertical-align: middle;
 
   svg {
     display: inline-block;
@@ -24,7 +25,6 @@
     fill: #fff;
     width: 32px;
     height: 32px;
-    margin-right: 0.25rem;
     transition: .3s linear;
   }
 

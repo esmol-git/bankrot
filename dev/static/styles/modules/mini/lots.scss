@@ -1,38 +1,42 @@
 .lots {
-    background: #FAFAFC;
-    border-radius: 12px;
-    padding: 55px 50px;
+  background: #FAFAFC;
+  border-radius: 12px;
+  padding: 55px 50px;
 
-    &__title {
-        font-size: 15px;
-        line-height: 17px;
-        color: $black;
-        margin-bottom: 20px;
+  &__title {
+    font-size: 15px;
+    line-height: 17px;
+    color: $black;
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    &-title {
+      font-size: 15px;
+      line-height: 17px;
+      letter-spacing: 0.0125em;
+      color: #FF4242;
+      padding-right: 10px;
     }
 
-    &__inner {
-        display: flex;
-        justify-content: space-between;
+    &-num {
+      font-size: 15px;
+      line-height: 17px;
+      letter-spacing: 0.0125em;
+      color: #8D91A0;
+
+      &.no-active {
+        color: #EFF0F4;
+      }
     }
-
-    &__item {
-        display: flex;
-        align-items: center;
-        padding: 10px 0;
-
-        &-title {
-            font-size: 15px;
-            line-height: 17px;
-            letter-spacing: 0.0125em;
-            color: #FF4242;
-            padding-right: 10px;
-        }
-
-        &-num {
-            font-size: 15px;
-            line-height: 17px;
-            letter-spacing: 0.0125em;
-            color: #8D91A0;
-        }
-    }
+  }
 }

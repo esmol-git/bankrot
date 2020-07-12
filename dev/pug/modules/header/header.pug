@@ -9,17 +9,17 @@ header.header
 
                 .header__registration
                     a(href="#").header__registration-link
-                        img(src="../static/images/general/basket.svg", alt="")
+                        +icon('basket')
                     a(href="#").header__registration-link
-                        img(src="../static/images/general/star.svg", alt="")
+                        +icon('star')
                     a(href="#").header__registration-link
-                        img(src="../static/images/general/bell.svg", alt="")
-                    button(href="#").btn.btn--redBorder.header__registration-btn Вход и регистрация
+                        +icon('bell')
+                    a(href="#popup").btn.btn--redBorder.header__registration-btn.popup-link Вход и регистрация
     .header__main
         .container
             .header__main-inner
                 a.logo(href="")
-                    img(src="../static/images/general/logo.png", alt="")
+                    img(src="../static/images/general/logo.svg", alt="")
                 nav.menu
                     ul.menu__list
                         li.menu__list-item
@@ -36,27 +36,19 @@ header.header
         .container
             .search__inner
                 .search__item
-                    .select-c
+                    .select
                         input.select__input(type='hidden', name='')
-                        .select__head Категория
+                        .select__head.header__select-head Категория
                         ul.select__list(style='display: none;')
                             li.select__item Тип1
                             li.select__item Тип2
                             li.select__item Тип3
                 .search__item
-                    input.input(type="text" placeholder='Поиск по номеру лота или ключевому слову')
+                    input.input.header__input(type="text" placeholder='Поиск по номеру лота или ключевому слову')
                 .search__item
-                    .select-c
+                    .select
                         input.select__input(type='hidden', name='')
-                        .select__head Номер сообщения ЕФРСБ
-                        ul.select__list(style='display: none;')
-                            li.select__item Тип1
-                            li.select__item Тип2
-                            li.select__item Тип3
-                .search__item
-                    .select-c
-                        input.select__input(type='hidden', name='')
-                        .select__head Номер сообщения ЕФРСБ
+                        .select__head.header__select-head Регион
                         ul.select__list(style='display: none;')
                             li.select__item Тип1
                             li.select__item Тип2
