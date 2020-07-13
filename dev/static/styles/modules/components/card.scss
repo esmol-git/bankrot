@@ -20,6 +20,26 @@
 
   &__header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #0B1F35;
+    font-weight: 500;
+
+    &-title {
+      font-size: 27px;
+      line-height: 31px;
+      letter-spacing: 0.0125em;
+    }
+
+    &-number {
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+
+  &__subheader {
+    display: flex;
     align-items: center;
     margin-bottom: 16px;
 
@@ -29,6 +49,14 @@
       font-size: 18px;
       line-height: 21px;
       color: #0B1F35;
+    }
+
+    &-number {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 17px;
+      color: #0B1F35;
+      margin-left: auto;
     }
 
     &-agrement {
@@ -50,15 +78,21 @@
     letter-spacing: 0.015em;
     margin-bottom: 15px;
 
-    &-firm {
-      color: #FF4242;
-      padding-right: 10px;
-      border-right: 1px solid #F2F2F2;
-    }
-
-    &-city {
+    &-item {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.015em;
       color: #8D91A0;
-      padding-left: 10px;
+      padding: 0 10px;
+
+      &:nth-child(1) {
+        padding-left: 0;
+      }
+
+      &:nth-child(2) {
+        border-right: 1px solid #F2F2F2;
+        border-left: 1px solid #F2F2F2;
+      }
     }
   }
 

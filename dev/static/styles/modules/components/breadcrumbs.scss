@@ -1,0 +1,18 @@
+.breadcrumbs {
+    display: flex;
+
+    &__link {
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.0125em;
+        color: #FF4242;
+
+        &::after {
+            content: '/';
+        }
+    }
+
+    &__text {
+        color: #FF4242;
+    }
+}

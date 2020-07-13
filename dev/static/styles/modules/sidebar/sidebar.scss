@@ -13,10 +13,7 @@
     padding: 0 10px;
 
     &::placeholder {
-      font-size: 15px;
-      line-height: 17px;
-      letter-spacing: 0.0125em;
-      color: #8D91A0;
+      color: #EFF0F4;
     }
 
   }
@@ -88,7 +85,7 @@
   /* Скругляем уголки */
 }
 
-.tab :checked+.tab-title::after {
+.tab__note :checked+.tab-title::after {
   content: '';
   transform: rotate(180deg) translateY(3px);
 }

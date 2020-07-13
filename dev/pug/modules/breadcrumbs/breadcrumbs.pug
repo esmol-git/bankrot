@@ -1,0 +1,12 @@
+mixin breadcrumbs-item(text,href)
+	li.breadcrumbs__item
+		if(href)
+			a.breadcrumbs__link(href=href)=text
+		else
+			span.breadcrumbs__text=text
+
+ul.breadcrumbs
+	+breadcrumbs-item('Кострома','#')
+	+breadcrumbs-item('Транспорт', '#')
+	+breadcrumbs-item('Легковой транспорт', '#')
+	+breadcrumbs-item('№43583')

@@ -49,6 +49,11 @@ header {
 
     }
 
+    .icon-basket {
+      stroke: none;
+      fill: #0B1F35;
+    }
+
     &-btn {
       font-size: 12px;
       line-height: 14px;
@@ -86,7 +91,7 @@ header {
       font-size: 15px;
       line-height: 17px;
       letter-spacing: 0.0125em;
-      color: #0B1F35
+      color: #0B1F35;
     }
   }
 }

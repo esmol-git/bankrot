@@ -1,7 +1,7 @@
 .lots {
   background: #FAFAFC;
   border-radius: 12px;
-  padding: 55px 50px;
+  padding: 40px 123px;
 
   &__title {
     font-size: 15px;
@@ -10,9 +10,13 @@
     margin-bottom: 20px;
   }
 
-  &__inner {
+  &__row {
     display: flex;
     justify-content: space-between;
+
+    &:nth-child(odd) {
+      margin-top: 40px;
+    }
   }
 
   &__item {
@@ -38,5 +42,16 @@
         color: #EFF0F4;
       }
     }
+  }
+
+  &__btn {
+    display: block;
+    margin: 40px auto 0;
+  }
+
+  .checkbox {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
   }
 }
