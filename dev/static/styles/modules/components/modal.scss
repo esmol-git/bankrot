@@ -54,6 +54,29 @@ body.lock {
   transition: all 0.8s ease 0s;
   opacity: 0;
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+
+  &-part {
+    width: 818px;
+    height: 855px;
+    overflow: hidden;
+    padding: 90px;
+    padding: 95px;
+    // overflow-y: auto;
+  }
+}
+
+.popup-part__text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.0125em;
+  color: #8D91A0;
+  text-align: justify;
+
+
+}
+
+.popup__block {
+  // padding-bottom: 90px;
 }
 
 .popup__content_image {

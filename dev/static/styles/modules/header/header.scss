@@ -70,6 +70,48 @@ header {
     align-items: center;
     padding: 35px 0;
   }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    padding-right: 22px;
+  }
+}
+
+.user {
+  &__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #EFF0F4;
+    display: block;
+    margin-right: 15px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      stroke: #8D91A0;
+      fill: transparent;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0125em;
+    color: #0B1F35;
+
+    &::after {
+      content: '';
+      border: 3px solid transparent;
+      border-top: 3px solid #000;
+      display: block;
+      width: 0;
+      height: 0;
+      display: inline-block;
+      margin-left: 13px;
+    }
+  }
 }
 
 .menu {

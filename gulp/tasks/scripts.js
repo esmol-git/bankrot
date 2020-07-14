@@ -13,7 +13,8 @@ module.exports = function () {
         "node_modules/svg4everybody/dist/svg4everybody.min.js",
         "node_modules/sticky-sidebar/dist/sticky-sidebar.min.js",
         "node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js",
-        "node_modules/@chenfengyuan/datepicker/i18n/datepicker.ru-RU.js"
+        "node_modules/@chenfengyuan/datepicker/i18n/datepicker.ru-RU.js",
+        "node_modules/slick-carousel/slick/slick.min.js",
       ])
       .pipe(concat("libs.min.js"))
       .pipe($.gulp.dest(scriptsPATH.output));
@@ -25,7 +26,8 @@ module.exports = function () {
         "node_modules/svg4everybody/dist/svg4everybody.min.js",
         "node_modules/sticky-sidebar/dist/sticky-sidebar.min.js",
         "node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js",
-        "node_modules/@chenfengyuan/datepicker/i18n/datepicker.ru-RU.js"
+        "node_modules/@chenfengyuan/datepicker/i18n/datepicker.ru-RU.js",
+        "node_modules/slick-carousel/slick/slick.min.js",
       ])
       .pipe(concat("libs.min.js"))
       .pipe(uglify())

@@ -6,22 +6,55 @@ $(document).ready(function () {
 
   });
 
-
-  $.fn.datepicker.languages['ru-RU'] = {
-    format: 'dd.mm.YYYY',
-    days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
-    daysShort: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-    daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-    months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-    monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-    weekStart: 1,
-    startView: 0,
-    yearFirst: true,
-    yearSuffix: ''
-  };
+  $('.slider-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.slider-dots',
+    fade: true,
+    draggable: false
+  })
+  $('.slider-dots').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.slider-main',
+    // centerMode: true,
+    focusOnSelect: true
+  })
 
 });
 
+$(".popup__block").mCustomScrollbar({
+  axis: 'y', // вертикальный скролл 
+  theme: 'minimal-dark', // тема 
+  scrollInertia: '500', // продолжительность прокрутки, значение в миллисекундах 
+  setHeight: 600, // высота блока (переписывает CSS) 
+  scrollbarPosition: "inside",
+  mouseWheel: {
+    deltaFactor: 100 // кол-во пикселей на одну прокрутку колёсика мыши 
+  }
+});
+
+$('a[href="#"]').click(function (event) {
+  event.preventDefault();
+  $('form').addClass('remove');
+});
+
+$(document).ready(function () {
+  var offset = $('#fixed').offset();
+  var topPadding = 0;
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > offset.top) {
+      $('#fixed').stop().animate({
+        marginTop: $(window).scrollTop() - offset.top + topPadding
+      });
+    } else {
+      $('#fixed').stop().animate({
+        marginTop: 0
+      });
+    }
+  });
+});
 
 
 jQuery(($) => {

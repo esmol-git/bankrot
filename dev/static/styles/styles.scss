@@ -218,7 +218,16 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 50%;
 }
 
+#mCSB_1_scrollbar_vertical .mCSB_dragger {
+  color: rgba(#0B1F35, .2) !important;
+  width: 5px !important;
+  height: 66px !important;
+  border-radius: 12px;
+}
 
+.mCSB_outside+.mCSB_scrollTools {
+  right: -26px !important;
+}
 
 //Модули
 @import "modules/modules";

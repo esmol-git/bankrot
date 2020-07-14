@@ -58,17 +58,6 @@
       color: #0B1F35;
       margin-left: auto;
     }
-
-    &-agrement {
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.015em;
-      color: #FFFFFF;
-      background: #3EE262;
-      border-radius: 4px;
-      padding: 5px 15px;
-      margin-left: 15px;
-    }
   }
 
   &__suptitle {
@@ -129,6 +118,7 @@
       border-right: 1px solid #EFF0F4;
       display: flex;
       justify-content: center;
+      align-items: center;
 
       &:last-child {
         border-right: none;
@@ -152,9 +142,15 @@
         stroke: #EFF0F4;
       }
 
-      &.is-active svg {
-        stroke: #FF4242;
+      &.is-active {
+        background-color: rgba(255, 66, 66, 0.1);
+
+        svg {
+          stroke: #FF4242;
+        }
       }
+
+
 
       svg {
         stroke: #8D91A0;
@@ -169,6 +165,17 @@
   &__btn:first-child {
     margin-right: 15px;
   }
+}
+
+.agrement {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+  background: #3EE262;
+  border-radius: 4px;
+  padding: 5px 15px;
+  margin-left: 15px;
 }
 
 .icon-arrow,
