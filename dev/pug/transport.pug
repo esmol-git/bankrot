@@ -1,0 +1,15 @@
+extends template/main
+
+block variables
+	- var title = 'Главная страница'
+
+block content
+	.container
+		#main-content.main
+			#sidebar.sidebar
+				include modules/sidebar/sidebar-transport
+				include modules/sidebar/sidebar-main
+			#content.content
+				.content
+					include modules/cards/card
+					include modules/pagination/pagination

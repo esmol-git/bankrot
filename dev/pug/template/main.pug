@@ -13,10 +13,7 @@ html(lang="ru-RU")
 		meta(name="keywords" content="")
 		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
 		link(href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap', rel='stylesheet')
-		link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
-		link(rel='stylesheet', href='//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css')
-		link(rel='stylesheet', href='//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/mCSB_buttons.png')
-		link(rel='stylesheet', href='//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js')
+
 
 		<!--[if lt IE 9]>
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
@@ -33,7 +30,7 @@ html(lang="ru-RU")
 			include ../modules/modals/modal-registration
 			include ../modules/modals/modal-password
 			include ../modules/modals/modal-part
-		.tab.tab__note#fixed
+		.tab.tab__note
 			input#note.tab__input(type='checkbox', name='tab-group')
 			label.tab-title(for='note') Заметки
 			section.tab-content

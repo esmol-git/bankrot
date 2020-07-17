@@ -60,3 +60,44 @@
 .tab :checked~.tab-content {
     height: 100%;
 }
+
+.expandable {
+    padding-left: 20px !important;
+
+    &:first-child {
+        padding: 0;
+    }
+}
+
+.expandable li a {
+    position: relative;
+}
+
+.with-list {
+    position: relative;
+}
+
+.expandable .with-list::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+.expandable .with-list.active::before {
+    content: '';
+}
+
+li ul.expandable {
+    display: none;
+}
+
+li.active>.expandable {
+    display: block;
+}
