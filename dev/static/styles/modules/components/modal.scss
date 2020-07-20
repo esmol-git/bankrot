@@ -234,3 +234,9 @@ body.lock {
 .select__head {
   font-weight: normal;
 }
+
+.popup-part__text {
+  overflow-y: auto;
+  height: 600px;
+  padding-right: 10px;
+}

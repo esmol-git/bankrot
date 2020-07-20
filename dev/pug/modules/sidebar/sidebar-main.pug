@@ -3,12 +3,12 @@
     input#tab1.tab__input(type='checkbox', name='tab-group')
     label.tab-title(for='tab1') Начало приема заявок
     section.tab-content
-        input.sidebar__input(data-toggle='datepicker' placeholder='Период')
+        input.sidebar__input.datepicker-here(placeholder='Период' type="text")
 .tab
     input#tab2.tab__input(type='checkbox', name='tab-group')
     label.tab-title(for='tab2') Окончание приема заявок
     section.tab-content
-        input.sidebar__input(data-toggle='datepicker' placeholder='Период')
+        input.sidebar__input.datepicker-here(data-toggle='datepicker' placeholder='Период')
 .tab
     input#tab3.tab__input(type='checkbox', name='tab-group')
     label.tab-title(for='tab3') Стоимость

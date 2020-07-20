@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@chenfengyuan/datepicker": "^1.0.9",
+    "air-datepicker": "^2.2.3",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "sticky-sidebar": "^3.3.1",

@@ -1,9 +1,7 @@
 $(document).ready(function () {
   svg4everybody({});
 
-  $('[data-toggle="datepicker"]').datepicker({
-    language: "ru-Ru",
-  });
+
 
   $(".slider-main").slick({
     slidesToShow: 1,
@@ -22,10 +20,7 @@ $(document).ready(function () {
   });
 });
 
-$('a[href="#"]').click(function (event) {
-  event.preventDefault();
-  $("form").addClass("remove");
-});
+
 
 jQuery(($) => {
   $(".select").on("click", ".select__head", function () {
@@ -278,3 +273,7 @@ function aClick(e) {
     }
   }
 }
+
+$('.datepicker-here').datepicker({
+  autoClose: true
+})

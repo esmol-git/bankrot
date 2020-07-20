@@ -61,37 +61,29 @@
     height: 100%;
 }
 
-.expandable {
-    padding-left: 20px !important;
 
-    &:first-child {
-        padding: 0;
-    }
+.expandable li {
+    padding-left: 20px !important;
 }
 
 .expandable li a {
     position: relative;
 }
 
-.with-list {
-    position: relative;
-}
-
 .expandable .with-list::before {
     content: '';
-    width: 6px;
-    height: 6px;
-    border-left: 1px solid #000;
-    border-top: 1px solid #000;
-    display: block;
     position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: rotate(-135deg) translateY(-50%);
+    left: 0;
+    background-image: url('../images/general/arrowd.svg');
+    width: 20px;
+    height: 20px;
+    background: rgba(11, 31, 53, 0.1);
+    border-radius: 50%;
+
 }
 
 .expandable .with-list.active::before {
-    content: '';
+    content: '-';
 }
 
 li ul.expandable {
@@ -100,4 +92,50 @@ li ul.expandable {
 
 li.active>.expandable {
     display: block;
+}
+
+
+.datepicker-panel>ul>li[data-view="month current"]:hover,
+.datepicker-panel>ul>li[data-view="month prev"]:hover,
+.datepicker-panel>ul>li[data-view="month next"]:hover,
+.datepicker-panel>ul[data-view=week]>li:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.datepicker-panel>ul>li {
+    transition: .2s linear;
+    border-radius: 50%
+}
+
+.datepicker-panel>ul>li.highlighted {
+    background-color: rgba(#FF4242, .4);
+    color: #fff;
+}
+
+.datepicker--cell.-selected- {
+    background-color: #FF4242;
+    border-radius: 50%;
+}
+
+.datepicker--cell.-selected-:hover {
+    background-color: #FF4242;
+}
+
+.datepicker--cell-day {
+    transition: .3s linear;
+}
+
+.datepicker--cell-day:hover {
+    background-color: #FF4242;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.datepicker--cell.-current- {
+    color: #FF4242;
+}
+
+.datepicker--cell.-current-:hover {
+    color: #fff;
 }
